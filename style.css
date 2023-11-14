@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gameCanvas {
+    border: 2px solid blueviolet;
+    max-width: 100%;
+    /* Pour s'assurer que le canvas ne dépasse pas la largeur de l'écran */
+    max-height: 100%;
+    /* Pour s'assurer que le canvas ne dépasse pas la hauteur de l'écran */
+    display: block;
+    /* Pour supprimer l'espace supplémentaire en bas du canvas */
+
+}
+
+.virtual-arrows {
+    text-align: center;
+    border: 1px solid violet;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    color: violet;
+}
+
+#left,
+#right {
+    display: inline;
+    margin-right: 10px;
+}
+
+#gameOverMessage {
+    color: violet;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
